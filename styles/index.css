@@ -15,11 +15,6 @@ a {
 	text-decoration: none;
 }
 
-.menu,
-.submenu {
-	list-style-type: none;
-}
-
 .logo {
 	font-size: 20px;
 	padding: 7.5px 10px 7.5px 0;
@@ -28,12 +23,13 @@ a {
 }
 
 .item {
-	padding: 10px;
+	height: 100%;
+	width: auto;
+	padding: 0px 10px 0 10px;
 	text-align: center;
 	order: 1;
 	position: relative;
 	display: block;
-	width: auto;
 }
 
 .item.button {
@@ -76,19 +72,14 @@ a {
 	display: block;
 	position: absolute;
 	left: 0;
-	top: 68px;
+	top: 55px;
 	background: #111;
-}
-
-.toggle {
-	order: 1;
-	font-size: 20px;
-	display: none;
+	width: auto;
 }
 
 .submenu-active {
 	background-color: #111;
-	border-radius: 3px;
+	border-radius: 0;
 }
 
 .submenu {

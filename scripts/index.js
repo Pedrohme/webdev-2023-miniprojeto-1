@@ -1,46 +1,26 @@
-const menu = document.querySelector(".menu");
-const items = document.querySelectorAll(".item");
+$(() => {
+	const itemsWithSubitems = $('.has-submenu');
 
-/* Toggle mobile menu */
-function toggleMenu() {
-  if (menu.classList.contains("active")) {
-    menu.classList.remove("active");
-  } else {
-    menu.classList.add("active");
-  }
-}
+	itemsWithSubitems.on('click', toggleItem);
 
-/* Activate Submenu */
+	$(document).on('click', closeSubmenu);
+});
+
 function toggleItem() {
-  if (this.classList.contains("submenu-active")) {
-    this.classList.remove("submenu-active");
-  } else if (menu.querySelector(".submenu-active")) {
-    menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    this.classList.add("submenu-active");
-  } else {
-    this.classList.add("submenu-active");
-  }
+	if (this.classList.contains('submenu-active')) {
+		this.classList.remove('submenu-active');
+	} else {
+		this.classList.add('submenu-active');
+	}
 }
 
-/* Close Submenu From Anywhere */
+/**
+ *
+ * @param {JQuery.Event} e
+ */
 function closeSubmenu(e) {
-  if (menu.querySelector(".submenu-active")) {
-    let isClickInside = menu
-      .querySelector(".submenu-active")
-      .contains(e.target);
-
-    if (!isClickInside && menu.querySelector(".submenu-active")) {
-      menu.querySelector(".submenu-active").classList.remove("submenu-active");
-    }
-  }
+	const activeSubmenu = $('.menu .submenu-active');
+	if (!activeSubmenu.has(e.target).length) {
+		activeSubmenu.removeClass('submenu-active');
+	}
 }
-
-/* Event Listeners */
-for (let item of items) {
-  if (item.querySelector(".submenu")) {
-    item.addEventListener("click", toggleItem, false);
-  }
-  item.addEventListener("keypress", toggleItem, false);
-}
-document.addEventListener("click", closeSubmenu, false);
-
