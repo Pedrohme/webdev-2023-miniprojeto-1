@@ -5,8 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<title>Estante de Livros</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="/public/logo.svg" type="image/svg+xml">
 		<link rel="stylesheet" type="text/css" media="screen" href="styles/reset.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="styles/index.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/home.css" />
 		<script
 			src="https://code.jquery.com/jquery-3.6.3.min.js"
 			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
@@ -20,7 +22,7 @@
 				<ul class="menu">
 					<li class="logo">
 						<a href="#">
-							<img class="logoImg" src="public/logo.svg" alt="logo pilha de livros" />
+							<img class="logoImg" src="/public/logo.svg" alt="logo pilha de livros" />
 						</a>
 					</li>
 					<li class="item">
@@ -30,26 +32,176 @@
 						<a tabindex="0">Manutenção dos itens</a>
 						<ul class="submenu">
 							<li class="subitem">
-								<a href="#">Cadastro de itens</a>
+								<a href="/pages/cadastro.html">Cadastro de itens</a>
 							</li>
 							<li class="subitem">
-								<a href="#">Consulta de itens</a>
+								<a href="/pages/consulta.html">Consulta de itens</a>
 							</li>
 						</ul>
 					</li>
 					<li class="item">
-						<a href="pages/listaDesejos.html">Lista de desejos</a>
+						<a href="/pages/listaDesejos.html">Lista de desejos</a>
 					</li>
 					<li class="item">
-						<a href="pages/perfil.html">Meu Perfil</a>
+						<a href="/pages/perfil.html">Meu Perfil</a>
 					</li>
 					<li class="item">
-						<a href="pages/sobre.html">Sobre nós</a>
+						<a href="/pages/sobre.html">Sobre nós</a>
 					</li>
 				</ul>
 			</nav>
 		</header>
-		<main></main>
-		<footer></footer>
+		<main>
+      <header>
+        <h1 class="home-title">Nossa estante</h1>
+      </header>
+      <div class="grid">
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/mil-milhao.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Investimentos</p>
+              <h2 class="card-title">Do mil ao milhão (sem esquecer do cafézinho)</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Thiago Nigro</li>
+                <li class="card-info">Editora: HarperCollins</li>
+                <li class="card-info">Ano: 2018</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/bob.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Biografia</p>
+              <h2 class="card-title">Bob Marley</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: David Burnett</li>
+                <li class="card-info">Editora: Madras</li>
+                <li class="card-info">Ano: 2014</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/karamazov.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Romance</p>
+              <h2 class="card-title">Os Irmãos Karamazov</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Fiódor Dostoiévski</li>
+                <li class="card-info">Editora: Mimética </li>
+                <li class="card-info">Ano: 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/enfoderese.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Desenvolvimento Pessoal</p>
+              <h2 class="card-title">ENFODERE-SE! </h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Caio Carneiro</li>
+                <li class="card-info">Editora: Buzz Editora</li>
+                <li class="card-info">Ano: 2019</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/arteligar.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Desenvolvimento Pessoal</p>
+              <h2 class="card-title">A Sutil Arte de Ligar o F*da-Se</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Mark Manson </li>
+                <li class="card-info">Editora: Intrínseca</li>
+                <li class="card-info">Ano: 2017</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/arteguerra.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Biografia</p>
+              <h2 class="card-title">A arte da guerra</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Sun Tzu</li>
+                <li class="card-info">Editora: AVIS RARA</li>
+                <li class="card-info">Ano: 2021</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/rezende.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Infantil</p>
+              <h2 class="card-title">Dois mundos, um herói: Uma aventura não oficial de Minecraft</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: RezendeEvil</li>
+                <li class="card-info">Editora: Suma</li>
+                <li class="card-info">Ano: 2015</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/oquesobra.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Biografia</p>
+              <h2 class="card-title">O que sobra</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Príncipe Harry</li>
+                <li class="card-info">Editora: Objetiva</li>
+                <li class="card-info">Ano: 2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/pairico.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Investimentos</p>
+              <h2 class="card-title">Pai Rico, Pai Pobre</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Robert T. Kiyosaki</li>
+                <li class="card-info">Editora: Alta Books</li>
+                <li class="card-info">Ano: 2018</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="card">
+            <img src="public/ninja.jpg" alt="" class="card-cover">
+            <div class="card-content">
+              <p class="card-category">Infantojuvenil</p>
+              <h2 class="card-title">Ninja: Get Good: My Ultimate Guide to Gaming</h2>
+              <ul class="card-info-list">
+                <li class="card-info">Autor: Tyler "Ninja" Blevins</li>
+                <li class="card-info">Editora: Clarkson Potter</li>
+                <li class="card-info">Ano: 2019</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+	<footer>
+		<p>Desenvolvimento Web - Ufscar Sorocaba 2022/2</p>
+		<a href="/pages/sobre.html" class="fa fa-2x fa-solid fa-people-group"></a>
+		<a href="https://github.com/Pedrohme/webdev-2023-miniprojeto-1" class="fa fa-2x fa-brands fa-github"></a>
+	</footer>
 	</body>
 </html>
