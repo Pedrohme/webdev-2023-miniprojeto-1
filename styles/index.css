@@ -12,6 +12,12 @@ body {
 	padding-bottom: 6rem;
 }
 
+#main-header {
+	position: sticky;
+	top: 0;
+	left: 0;
+}
+
 nav {
 	background: #222;
 	padding: 0 15px;
