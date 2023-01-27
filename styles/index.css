@@ -1,7 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
 
 * {
-	color: #373D3F
+	color: #373d3f;
 }
 
 body {
@@ -108,7 +108,7 @@ a {
 	font-size: 12px;
 }
 
-.has-submenu>a::after {
+.has-submenu > a::after {
 	font-family: 'Font Awesome 5 Free';
 	font-size: 12px;
 	line-height: 16px;

@@ -1,43 +1,43 @@
 section {
-    margin: 2rem;
-    text-align: center;
-    font-size: 1.3rem;
+	margin: 2rem;
+	text-align: center;
+	font-size: 1.3rem;
 }
 
 .team-section h4 {
-    margin: 5rem;
+	margin: 5rem;
 }
 
 .team-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	font-size: 1rem;
 }
 
 .team-container p {
-    margin: 1rem;
+	margin: 1rem;
 }
 
 .profile-picture {
-    width: 10rem;
-    border-radius: 50%;
-    border: solid 0.5rem rgb(236, 236, 236)
+	width: 10rem;
+	border-radius: 50%;
+	border: solid 0.5rem rgb(236, 236, 236);
 }
 
 .links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #373D3F;
-    margin-top: 1rem;
-    gap: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #373d3f;
+	margin-top: 1rem;
+	gap: 1rem;
 }
 
 .links a {
-    color: #373D3F;
+	color: #373d3f;
 }
 
 .links a:hover {
-    color: #373d3fbb;
+	color: #373d3fbb;
 }
