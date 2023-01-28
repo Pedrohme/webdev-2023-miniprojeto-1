@@ -15,7 +15,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="/scripts/index.js"></script>
-		<script defer src="/scripts/validation.js"></script>
+		<script defer src="/scripts/cadastro.js"></script>
 	</head>
 	<body>
 		<header id="main-header">
@@ -60,23 +60,32 @@
 			<form name="register" method="post" onsubmit="return validateForm()">
 				<fieldset>
 					<legend>Informações sobre a obra</legend>
-					<label for="title">Título</label>
-					<input id="title" name="title" placeholder="Os Irmãos Karamazov" type="text" />
-					<label for="author">Autor</label>
-					<input id="author" name="author" placeholder="Fiódor Dostoiévski" type="text" />
-					<label for="publisher">Editora</label>
-					<input id="publisher" name="publisher" placeholder="Mimética" type="text" />
-					<label for="year">Ano de publicação</label>
-					<input id="year" name="year" placeholder="2023" type="text" />
+					<label for="title">Título <span style="color:red">*</span></label>
+					<input id="title" name="title" placeholder="Os Irmãos Karamazov" type="text" required />
+
+					<label for="author">Autor <span style="color:red">*</span></label>
+					<input id="author" name="author" placeholder="Fiódor Dostoiévski" type="text" required />
+
+					<label for="publisher">Editora <span style="color:red">*</span></label>
+					<input id="publisher" name="publisher" placeholder="Mimética" type="text" required />
+
+					<label for="year">Data de publicação <span style="color:red">*</span></label>
+					<input id="date" name="date" type="date" required />
+
 					<label for="cover">Imagem da capa</label>
 					<input id="cover" name="cover" type="file" />
 				</fieldset>
 				<fieldset>
 					<legend>Informações do vendedor</legend>
-					<label for="name">Nome e sobrenome</label>
-					<input id="name" name="name" placeholder="João da Silva" type="text" />
-					<label for="email">E-mail para contato</label>
-					<input id="email" name="email" placeholder="(12) 98765-4321" type="text" />
+					<label for="name">Nome e sobrenome <span style="color:red">*</span></label>
+					<input id="name" name="name" placeholder="João da Silva" type="text" required />
+
+					<label for="email">E-mail para contato <span style="color:red">*</span></label>
+					<input id="email" name="email" placeholder="email@email.com" type="email" required />
+
+					<label for="tel">Telefone para contato</label>
+					<input id="tel" name="tel" placeholder="(12) 34567-8912" type="tel" maxlength="15"/>
+
 					<input type="submit" value="Cadastrar" id="submit" />
 				</fieldset>
 			</form>
