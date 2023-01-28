@@ -22,16 +22,6 @@ form label {
 	margin: 1rem 0;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='date'],
-input[type='tel'] {
-	padding: 12px 20px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-}
-
 input[type='submit'] {
 	margin: 1rem auto;
 	width: 40%;

@@ -10,11 +10,13 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="/styles/index.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/styles/listaDesejos.css" />
 		<script
+			defer
 			src="https://code.jquery.com/jquery-3.6.3.min.js"
 			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 			crossorigin="anonymous"
 		></script>
-		<script src="/scripts/index.js"></script>
+		<script defer src="/scripts/index.js"></script>
+		<script defer src="/scripts/listaDesejos.js"></script>
 	</head>
 	<body>
 		<header id="main-header">
@@ -56,22 +58,36 @@
 			<header>
 				<h1 class="title">Minha lista de desejos</h1>
 			</header>
+			<section class="button-section">
+				<select name="livros" id="select-livros">
+					<option value="Os Irmãos Karamazov">Os Irmãos Karamazov</option>
+					<option value="Bob Marley">Bob Marley</option>
+					<option value="ENFODERE-SE!">ENFODERE-SE!</option>
+					<option value="Dois mundos, um herói: Uma aventura não oficial de Minecraft">Dois mundos, um herói: Uma aventura não oficial de Minecraft</option>
+					<option value="O que sobra">O que sobra</option>
+				</select>
+				<button title="adicionar" id="add-livro">+</button>
+			</section>
 			<section>
-				<ol class="wish-list">
-					<div>
+				<ol id="wish-list">
+					<li>
 						<label>1</label>
-						<li>A arte da guerra</li>
-					</div>
+						<p>A arte da guerra</p>
+						<i title="Remover" class="fa-regular fa-trash-can fa-lg"></i>
+					</li>
 
-					<div>
+					<li>
 						<label>2</label>
-						<li>Pai Rico, Pai Pobre</li>
-					</div>
+						<p>Pai Rico, Pai Pobre</p>
+						<i title="Remover" class="fa-regular fa-trash-can fa-lg"></i>
+					</li>
 
-					<div>
+					<li>
 						<label>3</label>
-						<li>Do mil ao milhão (sem esquecer do cafézinho)</li>
-					</div>
+						<p>Do mil ao milhão (sem esquecer do cafézinho)</p>
+
+						<i title="Remover" class="fa-regular fa-trash-can fa-lg" lab></i>
+					</li>
 				</ol>
 			</section>
 		</main>
