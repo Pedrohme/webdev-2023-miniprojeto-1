@@ -16,6 +16,7 @@ body {
 	position: sticky;
 	top: 0;
 	left: 0;
+	z-index: 10;
 }
 
 nav {
@@ -155,4 +156,10 @@ footer p {
 
 footer a {
 	color: white;
+}
+
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin: 1.2rem;
 }

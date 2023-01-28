@@ -1,9 +1,4 @@
 $(() => {
-	$('#submit').on('click', (e) => {
-		// e.preventDefault();
-		// e.stopImmediatePropagation();
-	});
-
 	// Campo de telefone: formata a string automaticamente
 	$('#tel').on('input', function (e) {
 		e.preventDefault();

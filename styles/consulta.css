@@ -1,0 +1,26 @@
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 2rem;
+    padding: 5rem;
+}
+
+.search-container input {
+	height: inherit;
+    width: 30rem;
+}
+
+.search-container button {
+	background: #d7d7d7;
+	border: none;
+	cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+.search-container button:hover {
+	background: #b8b6b6;
+}
