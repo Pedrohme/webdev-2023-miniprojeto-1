@@ -9,7 +9,8 @@
 		<link rel="stylesheet" type="text/css" media="screen" href="/styles/reset.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/styles/index.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="/styles/cadastro.css" />
-		<script defer
+		<script
+			defer
 			src="https://code.jquery.com/jquery-3.6.3.min.js"
 			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
 			crossorigin="anonymous"
@@ -60,16 +61,16 @@
 			<form name="register">
 				<fieldset>
 					<legend>Informações sobre a obra</legend>
-					<label for="title">Título <span style="color:red">*</span></label>
+					<label for="title">Título <span style="color: red">*</span></label>
 					<input id="title" name="title" placeholder="Os Irmãos Karamazov" type="text" required />
 
-					<label for="author">Autor <span style="color:red">*</span></label>
+					<label for="author">Autor <span style="color: red">*</span></label>
 					<input id="author" name="author" placeholder="Fiódor Dostoiévski" type="text" required />
 
-					<label for="publisher">Editora <span style="color:red">*</span></label>
+					<label for="publisher">Editora <span style="color: red">*</span></label>
 					<input id="publisher" name="publisher" placeholder="Mimética" type="text" required />
 
-					<label for="year">Data de publicação <span style="color:red">*</span></label>
+					<label for="year">Data de publicação <span style="color: red">*</span></label>
 					<input id="date" name="date" type="date" required />
 
 					<label for="cover">Imagem da capa</label>
@@ -77,14 +78,14 @@
 				</fieldset>
 				<fieldset>
 					<legend>Informações do vendedor</legend>
-					<label for="name">Nome e sobrenome <span style="color:red">*</span></label>
+					<label for="name">Nome e sobrenome <span style="color: red">*</span></label>
 					<input id="name" name="name" placeholder="João da Silva" type="text" required />
 
-					<label for="email">E-mail para contato <span style="color:red">*</span></label>
+					<label for="email">E-mail para contato <span style="color: red">*</span></label>
 					<input id="email" name="email" placeholder="email@email.com" type="email" required />
 
 					<label for="tel">Telefone para contato</label>
-					<input id="tel" name="tel" placeholder="(12) 34567-8912" type="tel" maxlength="15"/>
+					<input id="tel" name="tel" placeholder="(12) 34567-8912" type="tel" maxlength="15" />
 
 					<input type="submit" value="Cadastrar" id="submit" />
 				</fieldset>

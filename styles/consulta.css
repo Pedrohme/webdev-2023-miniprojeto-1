@@ -1,9 +1,9 @@
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    height: 2rem;
-    padding: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	height: 2rem;
+	padding: 5rem;
 }
 
 .search-container button {
