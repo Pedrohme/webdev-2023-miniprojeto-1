@@ -180,3 +180,7 @@ select {
 	border: none;
 	outline: none;
 }
+
+option {
+	color: white;
+}
